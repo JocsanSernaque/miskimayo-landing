@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Main from "../components/Main.astro";
+import About from "../components/sections/About.astro";
+---
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col h-screen w-full">
+    <Navbar />    
+    <Main />
+  </main>
+  <About />
+</Layout>
