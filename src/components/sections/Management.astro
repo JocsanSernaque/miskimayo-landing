@@ -1,44 +1,71 @@
-<section class="flex flex-col justify-center items-center w-full gap-5 py-5">
-    <div class="flex flex-col justify-center items-center text-white md:w-[60%] gap-2 mt-5">
-        <h1 class="text-3xl text-orange_miski">Gestión</h1>
-        <p class="flex text-center">Nuestra Gestión Social Multiactor tiene como objetivo principal trabajar una Agenda Positiva Compartida, fortaleciendo la confianza de las comunidades de nuestro entorno y, a través de alianzas estratégicas.</p>       
+---
+import ManagementItem from "./ManagementItem.astro";
+---
+
+<section
+  class="w-full h-full grid grid-cols-10 auto-rows-[20rem] gap-4 mx-auto p-20"
+>
+  <ManagementItem class="col-span-10 md:col-span-4" title="Miski Mayo">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-center bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/planta_miski.webp')"
+    >
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center w-auto gap-5 transition-all ">
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/planta_miski.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Miski Mayo</h3>            
-        </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/fospibay.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Fospibay</h3>            
-        </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/comunidad.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Comunidad Campesina</h3>            
-        </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/vice.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Gobiernos Locales</h3>            
-        </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/education.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Entidades Educativas</h3>            
-        </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-            <div class="flex  relative border border-orange_miski rounded-full w-56 h-56">
-                <img src="images/contratistas.webp" alt="" class="flex w-full rounded-full overflow-hidden bg-no-repeat bg-cover bg-center">
-            </div>
-            <h3 class="text-orange_miski">Contratistas</h3>            
-        </div>    
-    </div>    
+  </ManagementItem>
+
+  <ManagementItem 
+    class="col-span-10 md:col-span-6" 
+    title="Fospibay">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-top bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/fospibay.webp')"
+    >
+    </div>
+  </ManagementItem>
+
+  <ManagementItem
+    class="col-span-10 md:col-span-6"
+    title="Comunidad Campesina"> 
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-center bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/comunidad.webp')"
+    >
+    </div>
+  </ManagementItem>
+
+  <ManagementItem 
+    class="col-span-10 md:col-span-4" 
+    title="Gobiernos Locales">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-center bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/vice.webp')"
+    >
+    </div>
+  </ManagementItem>
+
+  <ManagementItem
+    class="col-span-10 md:col-span-4"
+    title="Entidades Educativas">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-center bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/education.webp')"
+    >
+    </div>
+  </ManagementItem>
+
+  <ManagementItem 
+    class="col-span-10 md:col-span-6" 
+    title="Contratistas">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 bg-center bg-cover bg-no-repeat w-full h-full opacity-90 bg-blend-luminosity -z-10 overflow-hidden rounded-xl"
+      style="background-image: url('/images/contratistas.webp')"
+    >
+    </div>
+  </ManagementItem>
 </section>
